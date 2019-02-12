@@ -1,6 +1,7 @@
 [build]
+base = "bulletin-board/"
 publish = "bulletin-board/build/"
-command = "npm run start"
+command = "yarn-build"
 
 
 [[redirects]]

@@ -14,7 +14,6 @@ class Note extends Component{
     this.save = this.save.bind(this)
     this.renderForm = this.renderForm.bind(this)
     this.renderDisplay = this.renderDisplay.bind(this)
-    // this.onChange = this.onChange.bind(this)
   }
 
   edit(){
@@ -24,7 +23,7 @@ class Note extends Component{
   }
 
   remove(){
-    alert("removing")
+    this.props.onRemove(this.props.index)
   }
 
   save(e){
